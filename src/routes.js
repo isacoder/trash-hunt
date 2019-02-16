@@ -9,7 +9,7 @@ import Home from './components/home';
 import Sample1 from './components/sample1';
 import Sample2 from './components/sample2';
 import Upload from './components/upload';
-import Catalog from './components/catalog';
+import Catalog from './container/catalog-page';
 
 class AppRoutes extends Component {
   render() {
