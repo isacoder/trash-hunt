@@ -17,6 +17,9 @@ class Catalog extends Component {
       .then(res => {
         // console.log(res.data.resources);
         this.setState({ gallery: res.data.resources });
+      })
+      .catch((err) => {
+        alert('no items found')
       });
   }
   uploadWidget() {
