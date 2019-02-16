@@ -22,7 +22,7 @@ class Catalog extends Component {
         this.setState({ gallery: res.data.resources });
       })
       .catch((err) => {
-        alert('no items found')
+        console.log('no items found')
       });
   }
 
@@ -57,7 +57,7 @@ class Catalog extends Component {
                       </Image>
                       {/* </a > */}
                     </div>
-                    <div className="imgDescription">Created at {data.created_at}</div>
+                    <div className="imgTitle">Image Title</div>
                   </div>
                 )
               })

@@ -6,7 +6,7 @@ import '../assets/styles/item.css';
 class Item extends Component {
   render () {
     return (
-      <div>
+      <div className='itemDetailContainer'>
         { typeof this.props.location.data !== 'undefined' ?
           <CloudinaryContext cloudName="yukinoda">
             <div className="catalogContainer" key={this.props.location.data.public_id}>
@@ -17,7 +17,8 @@ class Item extends Component {
                   />
                 </Image>
               </div>
-              <div className="imgDescription">Created at {this.props.location.data.created_at}</div>
+              <div className='imgDetailTitle'>Image Title</div>
+              <div className="imgDetailDescription">Created at {this.props.location.data.created_at}</div>
             </div>
           </CloudinaryContext>
           :

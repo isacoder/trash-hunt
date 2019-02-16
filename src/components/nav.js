@@ -8,7 +8,7 @@ import User from '../assets/images/user-icon.png';
 
 class Nav extends Component {
   redirectCatalog = () => {
-    this.props.history.push('/catalog')
+    this.props.history.push('/')
   }
 
   redirectProfile = () => {

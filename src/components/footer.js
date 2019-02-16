@@ -19,7 +19,7 @@ class Nav extends Component {
               <Link to={`/upload`}>Upload</Link>
             </Col>
             <Col xs={3}>
-              <Link to={`/catalog`}>Catalog</Link>
+              <Link to={`/`}>Catalog</Link>
             </Col>
             <Col xs={3}>
               <Link to={`/profile`}>Profile</Link>

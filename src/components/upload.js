@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class Upload extends Component {
   uploadWidget() {
-    window.cloudinary.openUploadWidget({ cloud_name: 'yukinoda', upload_preset: 'trash-hunt-items', tags: ['gallery-item']},
+    window.cloudinary.openUploadWidget({ cloud_name: 'yukinoda', upload_preset: 'trash-hunt-items', tags: ['my-item']},
       (error, result) => {
         console.log(result);
       });
@@ -11,6 +11,7 @@ class Upload extends Component {
     return (
       <div className="main">
         <h1>Uploading form</h1>
+        <br />
         <div className="upload">
           <button onClick={this.uploadWidget} className="upload-button">
             Add Image
