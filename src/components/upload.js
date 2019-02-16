@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+// styles
+import '../assets/styles/upload.css';
+// images
+import uploadButton from '../assets/images/upload-button.png';
 
 class Upload extends Component {
   uploadWidget() {
@@ -9,14 +13,8 @@ class Upload extends Component {
   }
   render() {
     return (
-      <div className="main">
-        <h1>Uploading form</h1>
-        <br />
-        <div className="upload">
-          <button onClick={this.uploadWidget} className="upload-button">
-            Add Image
-          </button>
-        </div>
+      <div>
+        <img className="uploadButton" src={uploadButton} alt='upload' onClick={this.uploadWidget} />
       </div>
 
     );
