@@ -18,9 +18,6 @@ class CatalogPage extends Component {
             Find your
             <br />
             treasure
-            <div className>
-
-            </div>
           </div>
         </div>
         <Catalog
