@@ -1,6 +1,6 @@
 .navHeader {
   position: fixed;
-  top: 0;
+  bottom: 0;
   background-color: #00aa45;
   height: 46px;
   width: 100%;
@@ -9,7 +9,7 @@
 }
 
 .navHeader a {
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   color: white;
 }
