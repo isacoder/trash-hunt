@@ -1,6 +1,6 @@
 .main-info-container {
   text-align: center;
-  margin-top: 80px;
+  margin: 80px;
 }
 .avatar-photo {
   padding: 10px 15px;
@@ -43,4 +43,9 @@
   position: absolute;
   left: 11px;
   top: 4px;
+}
+
+.catalog-container {
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
 }

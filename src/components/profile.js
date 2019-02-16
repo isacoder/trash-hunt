@@ -24,7 +24,7 @@ class Profile extends Component {
             </div>
           </div>
         </div>
-        <div clasName="catalog-container">
+        <div className="catalog-container">
           <Catalog tag='gallery-item'/>
         </div>
       </div>
