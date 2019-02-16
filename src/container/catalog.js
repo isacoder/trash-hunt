@@ -13,9 +13,9 @@ class Catalog extends Component {
   }
   componentDidMount() {
     // Request for images tagged xmas       
-    axios.get('https://res.cloudinary.com/yukinoda/image/list/items.json')
+    axios.get(`https://res.cloudinary.com/yukinoda/image/list/v${Date.now()}/gallery-item.json`)
       .then(res => {
-        console.log(res.data.resources);
+        // console.log(res.data.resources);
         this.setState({ gallery: res.data.resources });
       });
   }
@@ -36,15 +36,12 @@ class Catalog extends Component {
                       <a target="_blank" href={`https://res.cloudinary.com/yukinoda/image/upload/${data.public_id}.jpg`} rel="noopener noreferrer">
                         <Image publicId={data.public_id}>
                           <Transformation
-                            crop="scale"
-                            width="300"
-                            height="200"
                             dpr="auto"
                             responsive_placeholder="blank"
                           />
                         </Image>
                       </a>
-                      <div className="desc">Created at {data.created_at}</div>
+                      {/* <div className="desc">Created at {data.created_at}</div> */}
                     </div>
                   </div>
                 )

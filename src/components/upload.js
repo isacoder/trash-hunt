@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class Upload extends Component {
   uploadWidget() {
-    window.cloudinary.openUploadWidget({ cloud_name: 'yukinoda', upload_preset: 'trash-hunt-items'},
+    window.cloudinary.openUploadWidget({ cloud_name: 'yukinoda', upload_preset: 'trash-hunt-items', tags: ['gallery-item']},
       (error, result) => {
         console.log(result);
       });
