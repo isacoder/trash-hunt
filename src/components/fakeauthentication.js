@@ -1,28 +1,53 @@
 import React, { Component } from 'react';
 import '../assets/styles/App.css';
 import '../assets/styles/fakeAu.css'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 class FakeAuthentication extends Component {
   render() {
     return (
-      <div className="Wrapper">
-        <div className="Title">
+      <div>
+        <div className="SUTitle">
           Sign Up Now!
-          <div className="FormWrapper">
-            <div className="Title">Full Name</div>
-            <input type="text" name="fullname" placeholder="John Doe"></input>
-          </div>
-
-          <div className="FormWrapper">
-            <div className="Title">Email</div>
-            <input type="text" name="email" placeholder="john.doe@demo.com"></input>
-          </div>
-
-          <div className="FormWrapper">
-            <div className="Title">Password</div>
-            <input type="text" name="password" placeholder="PineAppleJui€e"></input>
-          </div>
         </div>
+
+        <Container className="form-style-5">
+          <Row>
+            <Col xs={4}>
+              <div className="FormTitle">Full Name</div>
+            </Col>
+
+            <Col xs={8}>
+              <input
+                type="text"
+                name="fullname"
+                placeholder="Fullname.." />
+            </Col>
+          </Row>
+
+          <Row>
+            <Col xs={4}>
+              <div className="FormTitle">Email</div>
+            </Col>
+
+            <Col xs={8}>
+              <input className="Form" type="text" name="email" placeholder="Email.."></input>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col xs={4}>
+              <div className="FormTitle">Password</div>
+            </Col>
+
+            <Col xs={8}>
+              <input className="Form" type="text" name="Password" placeholder="Password.."></input>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
