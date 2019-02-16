@@ -47,6 +47,20 @@ class FakeAuthentication extends Component {
               <input className="Form" type="text" name="Password" placeholder="Password.."></input>
             </Col>
           </Row>
+
+          <Row>
+            <Col xs={6}>
+              <div className="Button">
+                Check
+              </div>
+            </Col>
+
+            <Col xs={6}>
+              <div className="Button">
+                Cancel
+              </div>
+            </Col>
+          </Row>
         </Container>
       </div>
     );
