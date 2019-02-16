@@ -1,0 +1,51 @@
+.main-info-container {
+  text-align: center;
+  margin: 80px;
+}
+.avatar-photo {
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: auto;
+  height: 150px;
+}
+
+.avatar-photo img{
+ height: 100%;
+ width: auto;
+}
+
+.score {
+  margin: auto;
+  display: inline-block;
+}
+
+.score .value {
+  height: 30px;
+  font-size: 30px;
+  margin-right: 4px;
+  display: inline-block;
+  text-align: center;
+}
+
+.score .star-points {
+  position: relative;
+  display: inline-block;
+}
+
+
+.score .star img {
+  height: 30px;
+}
+
+.score .star-letter {
+  position: absolute;
+  left: 11px;
+  top: 4px;
+}
+
+.catalog-container {
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+}
