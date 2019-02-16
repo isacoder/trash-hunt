@@ -18,7 +18,6 @@
 }
 
 .userIcon {
-  filter: invert(100%);
   position: fixed;
   right: 10px;
 }
