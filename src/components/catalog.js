@@ -31,8 +31,8 @@ class Catalog extends Component {
 
   render() {
     return (
-      <div className="main">
-        <h1>Galleria</h1>
+      <div className="main" style={{paddingTop: '45px', textAlign: 'center'}}>
+        <h1>Gallery</h1>
         <div className="gallery">
           <CloudinaryContext cloudName="yukinoda">
             {
