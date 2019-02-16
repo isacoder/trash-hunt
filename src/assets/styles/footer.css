@@ -1,23 +1,15 @@
-.navHeader {
+.navFooter {
   position: fixed;
-  top: 0;
+  bottom: 0;
   background-color: #00aa45;
-  height: 50px;
+  height: 46px;
   width: 100%;
+  text-align: center;
   padding-top: 8px;
 }
 
-.logo {
-  margin-left: 15px;
-}
-
-.navHeader a {
+.navFooter a {
   font-size: 20px;
   text-decoration: none;
   color: white;
-}
-
-.userIcon {
-  position: fixed;
-  right: 10px;
 }
