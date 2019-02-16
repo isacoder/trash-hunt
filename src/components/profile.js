@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Catalog from '../components/catalog';
 import '../assets/styles/profile.css';
 
 class Profile extends Component {
@@ -24,6 +25,7 @@ class Profile extends Component {
           </div>
         </div>
         <div clasName="catalog-container">
+          <Catalog tag='gallery-item'/>
         </div>
       </div>
     )
