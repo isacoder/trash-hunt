@@ -5,6 +5,7 @@ import { LastLocationProvider } from 'react-router-last-location';
 import ScrollMemory from 'react-router-scroll-memory';
 // components
 import Nav from './components/nav';
+import Footer from './components/footer';
 import Home from './components/home';
 import Sample1 from './components/sample1';
 import Sample2 from './components/sample2';
@@ -25,6 +26,7 @@ class AppRoutes extends Component {
             <Route exact path='/upload' component={Upload} />
             <Route exact path='/catalog' component={Catalog} />
           </Switch>
+          <Footer />
         </LastLocationProvider>
       </BrowserRouter>
     )
