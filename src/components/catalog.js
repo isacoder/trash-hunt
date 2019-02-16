@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 import { Image, CloudinaryContext, Transformation } from 'cloudinary-react';
 // styles
@@ -15,11 +16,7 @@ class Catalog extends Component {
 
   componentDidMount() {
     // Request for images tagged xmas       
-    axios.get(`https://res.cloudinary.com/yukinoda/image/list/v${Date.now() + '/' + this.state.tag}.json`, {
-      onDownloadProgress: function (progressEvent) {
-        console.log(progressEvent, progressEvent.loaded * 100, progressEvent.total);
-      }
-    })
+    axios.get(`https://res.cloudinary.com/yukinoda/image/list/v${Date.now() + '/' + this.state.tag}.json`)
       .then(res => {
         // console.log(res.data.resources);
         this.setState({ gallery: res.data.resources });
@@ -31,6 +28,14 @@ class Catalog extends Component {
 
   uploadWidget() {
     // . . .
+  }
+
+  redirectItem = data => {
+    console.log(data)
+    this.props.history.push({
+      pathname: '/item',
+      data
+      })
   }
 
   render() {
@@ -45,7 +50,7 @@ class Catalog extends Component {
                   <div className="catalogContainer" key={data.public_id}>
                     <div className="imgContainer">
                       {/* <a target="_blank" href={`https://res.cloudinary.com/yukinoda/image/upload/f_auto,q_auto/${data.public_id}.jpg`} rel="noopener noreferrer"> */}
-                      <Image publicId={data.public_id}>
+                      <Image publicId={data.public_id} onClick={() => {this.redirectItem(data)}} >
                         <Transformation
                           height='180' crop="scale"
                         />
@@ -66,4 +71,4 @@ class Catalog extends Component {
   }
 }
 
-export default Catalog;
+export default withRouter(Catalog);

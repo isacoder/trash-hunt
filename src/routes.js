@@ -12,6 +12,7 @@ import FakeAuthentication from './components/fakeauthentication';
 import Catalog from './container/catalog-page';
 import Profile from './components/profile';
 import SignIn from './components/SignIn';
+import Item from './components/item';
 
 class AppRoutes extends Component {
   render() {
@@ -26,6 +27,7 @@ class AppRoutes extends Component {
             <Route exact path='/upload' component={Upload} />
             <Route exact path='/catalog' component={Catalog} />
             <Route exact path='/profile' component={Profile} />
+            <Route exact path='/item' component={Item} />
           </Switch>
           <Nav />
           <Footer />
