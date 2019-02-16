@@ -1,25 +1,24 @@
-import React, { Component } from 'react';
-// import cloudinary from 'cloudinary-react';
+import React, { Component } from 'react'
 
 class Upload extends Component {
   uploadWidget() {
-    // cloudinary.openUploadWidget({ cloud_name: 'yukinoda', upload_preset: 'splice', tags: ['xmas'] },
-    //   function (error, result) {
-    //     console.log(result);
-    //   });
+    window.cloudinary.openUploadWidget({ cloud_name: 'yukinoda', upload_preset: 'trash-hunt-items', tags: ['gallery-item']},
+      (error, result) => {
+        console.log(result);
+      });
   }
-
   render() {
     return (
       <div className="main">
-        <h1>Galleria</h1>
+        <h1>Uploading form</h1>
         <div className="upload">
-          <button onClick={this.uploadWidget.bind(this)} className="upload-button">
+          <button onClick={this.uploadWidget} className="upload-button">
             Add Image
           </button>
         </div>
       </div>
-    )
+
+    );
   }
 }
 
