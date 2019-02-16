@@ -1,0 +1,14 @@
+.Wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50%
+}
+
+.Title {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.FormWrapper {
+    display: inline-block;
+}
