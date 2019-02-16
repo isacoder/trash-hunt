@@ -56,7 +56,7 @@ class FakeAuthentication extends Component {
             </Col>
 
             <Col xs={6}>
-              <div className="Button">
+              <div className>
                 Cancel
               </div>
             </Col>
