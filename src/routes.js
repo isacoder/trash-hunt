@@ -6,9 +6,9 @@ import ScrollMemory from 'react-router-scroll-memory';
 // components
 import Home from './components/home';
 import Sample1 from './components/sample1';
-import Sample2 from './components/sample2';
 import Upload from './components/upload';
 import Catalog from './container/catalog';
+import FakeAuthentication from './components/fakeauthentication';
 
 class AppRoutes extends Component {
   render() {
@@ -19,7 +19,7 @@ class AppRoutes extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/sample1' component={Sample1} />
-            <Route exact path='/sample2' component={Sample2} />
+            <Route exact path='/FakeAuthentication' component={FakeAuthentication} />
             <Route exact path='/upload' component={Upload} />
             <Route exact path='/catalog' component={Catalog} />
           </Switch>
