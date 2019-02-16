@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-class Sample1 extends Component {
+class SignIn extends Component {
   render() {
     return (
       <div>
@@ -53,4 +53,4 @@ class Sample1 extends Component {
   }
 }
 
-export default Sample1;
+export default SignIn;

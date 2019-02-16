@@ -7,11 +7,11 @@ import ScrollMemory from 'react-router-scroll-memory';
 import Nav from './components/nav';
 import Footer from './components/footer';
 import Home from './components/home';
-import Sample1 from './components/sample1';
 import Upload from './components/upload';
 import FakeAuthentication from './components/fakeauthentication';
 import Catalog from './container/catalog-page';
 import Profile from './components/profile';
+import SignIn from './components/SignIn';
 
 class AppRoutes extends Component {
   render() {
@@ -22,7 +22,7 @@ class AppRoutes extends Component {
           <ScrollMemory />
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/sample1' component={Sample1} />
+            <Route exact path='/SignIn' component={SignIn} />
             <Route exact path='/FakeAuthentication' component={FakeAuthentication} />
             <Route exact path='/upload' component={Upload} />
             <Route exact path='/catalog' component={Catalog} />
