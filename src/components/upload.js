@@ -6,7 +6,7 @@ import uploadButton from '../assets/images/upload-button.png';
 
 class Upload extends Component {
   uploadWidget() {
-    window.cloudinary.openUploadWidget({ cloud_name: 'yukinoda', upload_preset: 'trash-hunt-items', tags: ['my-item']},
+    window.cloudinary.openUploadWidget({ cloud_name: 'yukinoda', upload_preset: 'trash-hunt-items', tags: ['gallery-item','my-item']},
       (error, result) => {
         console.log(result);
       });
