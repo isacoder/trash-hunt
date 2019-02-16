@@ -12,6 +12,7 @@ class Item extends Component {
           { typeof this.props.location.data !== 'undefined' ?
             <CloudinaryContext cloudName="yukinoda">
               <div className="catalogContainer" key={this.props.location.data.public_id}>
+                <div className='imgDetailTitle'>Image Title</div>
                 <div className="imgContainer">
                   <Image publicId={this.props.location.data.public_id}>
                     <Transformation
@@ -19,7 +20,6 @@ class Item extends Component {
                     />
                   </Image>
                 </div>
-                <div className='imgDetailTitle'>Image Title</div>
                 <div className="imgDetailDescription">Created at {this.props.location.data.created_at}</div>
               </div>
             </CloudinaryContext>

@@ -15,5 +15,6 @@
 }
 
 .imgTitle {
-  margin-bottom: 4vw;
+  margin: 0 10vw 4vw;
+  text-align: left;
 }

@@ -1,7 +1,15 @@
+.imgDetailTitle {
+  font-size: 25px;
+  margin: 0 10vw;
+  text-align: left;
+}
+
 .itemDetailContainer {
   margin-top: 70px;
 }
 
 .imgDetailDescription {
   margin-bottom: 4vw;
+  margin: 0 10vw;
+  text-align: left;
 }

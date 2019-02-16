@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 // components
 import Catalog from '../components/catalog';
+import Filter from '../components/filter';
 // styles
 import '../assets/styles/catalog-page.css'
 // images
 import BackImg from '../assets/images/background.png';
 
 class CatalogPage extends Component {
+  state = {
+    tag: 'gallery-item'
+  }
+
   render() {
     return(
       <div>
@@ -21,8 +26,9 @@ class CatalogPage extends Component {
           </div>
         </div>
         <Catalog
-          tag='gallery-item'
+          tag={this.state.tag}
         />
+        <Filter />
       </div>
     )
   }
