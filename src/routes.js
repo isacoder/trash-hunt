@@ -17,7 +17,6 @@ class AppRoutes extends Component {
     return (
       <BrowserRouter>
         <LastLocationProvider>
-          <Nav />
           <ScrollMemory />
           <Switch>
             <Route exact path='/' component={Home} />
@@ -26,6 +25,7 @@ class AppRoutes extends Component {
             <Route exact path='/upload' component={Upload} />
             <Route exact path='/catalog' component={Catalog} />
           </Switch>
+          <Nav />
           <Footer />
         </LastLocationProvider>
       </BrowserRouter>

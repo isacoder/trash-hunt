@@ -1,0 +1,19 @@
+.galleryTitle {
+  font-size: 7vw;
+  margin: 5vw 0;
+}
+
+.catalogContainer {
+  text-align: center;
+}
+
+.imgContainer {
+  height: 200px;
+  margin: 0 10vw 2vw;
+  padding: 10px;
+  border: 2px solid #00ae32;
+}
+
+.imgDescription {
+  margin-bottom: 4vw;
+}
