@@ -12,14 +12,17 @@ class Nav extends Component {
       <div className='navHeader'>
         <Container>
           <Row>
-            <Col xs={4}>
-              <Link to={`/`}>Home</Link>
+            <Col xs={3}>
+              <Link to={`/item`}>Item</Link>
             </Col>
-            <Col xs={4}>
+            <Col xs={3}>
               <Link to={`/upload`}>Upload</Link>
             </Col>
-            <Col xs={4}>
+            <Col xs={3}>
               <Link to={`/catalog`}>Catalog</Link>
+            </Col>
+            <Col xs={3}>
+              <Link to={`/profile`}>Profile</Link>
             </Col>
           </Row>
         </Container>

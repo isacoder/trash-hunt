@@ -1,11 +1,11 @@
 .navHeader {
   position: fixed;
   top: 0;
-  background-color: black;
-  height: 47px;
+  background-color: #00aa45;
+  height: 46px;
   width: 100%;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 8px;
 }
 
 .navHeader a {

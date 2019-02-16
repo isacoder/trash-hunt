@@ -40,7 +40,7 @@ class Catalog extends Component {
                 return (
                   <div className="responsive" key={data.public_id}>
                     <div className="img">
-                      <a target="_blank" href={`https://res.cloudinary.com/yukinoda/image/upload/${data.public_id}.jpg`} rel="noopener noreferrer">
+                      <a target="_blank" href={`https://res.cloudinary.com/yukinoda/image/upload/f_auto,q_auto/${data.public_id}.jpg`} rel="noopener noreferrer">
                         <Image publicId={data.public_id}>
                           <Transformation
                             dpr="auto"
