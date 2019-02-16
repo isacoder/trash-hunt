@@ -1,0 +1,35 @@
+.avatarPhoto {
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Score {
+  margin: auto;
+  display: inline-block;
+}
+
+.Score .value {
+  height: 30px;
+  font-size: 30px;
+  margin-right: 4px;
+  display: inline-block;
+  text-align: center;
+}
+
+.Score .star-points {
+  position: relative;
+  display: inline-block;
+}
+
+
+.Score .star img {
+  height: 30px;
+}
+
+.Score .star-letter {
+  position: absolute;
+  left: 11px;
+  top: 4px;
+}

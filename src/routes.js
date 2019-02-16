@@ -11,6 +11,7 @@ import Sample1 from './components/sample1';
 import Upload from './components/upload';
 import FakeAuthentication from './components/fakeauthentication';
 import Catalog from './container/catalog-page';
+import Profile from './components/profile';
 
 class AppRoutes extends Component {
   render() {
@@ -25,6 +26,7 @@ class AppRoutes extends Component {
             <Route exact path='/FakeAuthentication' component={FakeAuthentication} />
             <Route exact path='/upload' component={Upload} />
             <Route exact path='/catalog' component={Catalog} />
+            <Route exact path='/profile' component={Profile} />
           </Switch>
           <Footer />
         </LastLocationProvider>
