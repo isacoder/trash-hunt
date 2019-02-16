@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-// import cloudinary from 'cloudinary-react';
+import {cloudinary} from 'cloudinary-react';
 
 class Upload extends Component {
   uploadWidget() {
-    // cloudinary.openUploadWidget({ cloud_name: 'yukinoda', upload_preset: 'splice', tags: ['xmas'] },
-    //   function (error, result) {
-    //     console.log(result);
-    //   });
+    cloudinary.openUploadWidget({ cloud_name: 'yukinoda', upload_preset: 'trash-hunt-items'},
+      function (error, result) {
+        console.log(result);
+      });
   }
-
   render() {
     return (
       <div className="main">
@@ -16,10 +15,11 @@ class Upload extends Component {
         <div className="upload">
           <button onClick={this.uploadWidget.bind(this)} className="upload-button">
             Add Image
-          </button>
+                    </button>
         </div>
       </div>
-    )
+
+    );
   }
 }
 

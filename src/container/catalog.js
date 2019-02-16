@@ -14,7 +14,7 @@ class Catalog extends Component {
        <div>
         <h1>Hello, world!</h1>
         <CloudinaryContext cloudName="yukinoda">
-            <Image publicId="sample">
+            <Image publicId="trash-hunt/items/images">
                 <Transformation width="200" crop="scale" angle="10"/>
             </Image>
         </CloudinaryContext>
