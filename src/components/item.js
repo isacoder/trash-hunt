@@ -20,12 +20,24 @@ class Item extends Component {
                     />
                   </Image>
                 </div>
-                <div className="imgDetailDescription">Created at {this.props.location.data.created_at}</div>
+                <div className="imgDetailDescription">
+                  Created at {this.props.location.data.created_at}
+                </div>
               </div>
+              <hr />
+              <div>
+                <div className='collectButton'>
+                  Collect
+                </div>
+              </div>
+              <hr />
             </CloudinaryContext>
             :
             <div style={{marginTop: '60px'}}>
               No image selected
+              <div className='collectButton'>
+                Collect
+              </div>
             </div>
           }
         </div>
