@@ -18,11 +18,11 @@
 }
 
 .filterListContainer.openAnim {
-  animation: opening .5s ease-out forwards;
+  animation: opening .3s ease-out forwards;
 }
 
 .filterListContainer.closeAnim {
-  animation: closing .5s ease-in forwards;
+  animation: closing .3s ease-in forwards;
 }
 
 @keyframes opening {
