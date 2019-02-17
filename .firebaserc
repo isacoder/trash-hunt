@@ -1,1 +1,6 @@
-{}
+{
+  "projects": {
+    "trash2": "trash-hunt-2",
+    "trash": "trash-hunt"
+  }
+}
