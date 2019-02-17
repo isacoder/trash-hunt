@@ -11,7 +11,8 @@ class Catalog extends Component {
     super(props);
     this.state = {
       gallery: [],
-      tag: this.props.tag
+      tag: this.props.tag,
+      pathName: this.props.pathName
     }
   }
 
@@ -35,7 +36,7 @@ class Catalog extends Component {
   redirectItem = data => {
     console.log(data)
     this.props.history.push({
-      pathname: '/item',
+      pathname: this.state.pathName,
       data
       })
   }
@@ -44,7 +45,6 @@ class Catalog extends Component {
     return (
       <div>
         <div className="main" style={{ textAlign: 'center'}}>
-          <div className='galleryTitle'>Go get items now</div>
           <div className="gallery">
             <CloudinaryContext cloudName="yukinoda">
               {
@@ -55,7 +55,7 @@ class Catalog extends Component {
                         {/* <a target="_blank" href={`https://res.cloudinary.com/yukinoda/image/upload/f_auto,q_auto/${data.public_id}.jpg`} rel="noopener noreferrer"> */}
                         <Image publicId={data.public_id} onClick={() => {this.redirectItem(data)}} >
                           <Transformation
-                            height='180' crop="scale"
+                            height='180' crop="scale" fetchFormat="auto" quality="auto"
                           />
                         </Image>
                         {/* </a > */}

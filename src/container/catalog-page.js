@@ -9,7 +9,8 @@ import BackImg from '../assets/images/background.png';
 
 class CatalogPage extends Component {
   state = {
-    tag: 'gallery-item'
+    tag: 'gallery-item',
+    pathName: '/my-item'
   }
 
   render() {
@@ -25,8 +26,10 @@ class CatalogPage extends Component {
             treasure
           </div>
         </div>
+        <div className='catalogTitle'>Go get items now</div>
         <Catalog
           tag={this.state.tag}
+          pathName={this.state.pathName}
         />
         <Filter />
       </div>

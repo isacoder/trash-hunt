@@ -13,7 +13,7 @@ class Nav extends Component {
         <Container>
           <Row>
             <Col xs={3}>
-              <Link to={`/item`}>Item</Link>
+              <Link to={`/my-item`}>Item</Link>
             </Col>
             <Col xs={3}>
               <Link to={`/upload`}>Upload</Link>

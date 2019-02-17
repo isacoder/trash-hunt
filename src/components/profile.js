@@ -3,6 +3,10 @@ import Catalog from '../components/catalog';
 import '../assets/styles/profile.css';
 
 class Profile extends Component {
+  state = {
+    tag: 'my-item',
+    pathName: '/collection-item'
+  }
 
   render() {
     return (
@@ -25,7 +29,11 @@ class Profile extends Component {
           </div>
         </div>
         <div className="catalog-container">
-          <Catalog tag='my-item'/>
+          <div className='listTitle'>My list</div>
+          <Catalog 
+            tag={this.state.tag}
+            pathName={this.state.pathName}
+          />
         </div>
       </div>
     )

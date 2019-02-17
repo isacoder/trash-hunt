@@ -1,3 +1,10 @@
+.listTitle {
+  font-size: 7vw;
+  margin: 5vw 0;
+  width: 100%;
+  text-align: center;
+}
+
 .main-info-container {
   text-align: center;
   margin: 80px;

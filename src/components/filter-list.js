@@ -13,7 +13,7 @@ class FilterList extends Component {
     )
   }
 
-  render () {
+  render() {
     return (
       <div>
         <div className={`filterListContainer ${this.props.openList ? 'openAnim' : null} + ${this.props.closeList ? 'closeAnim' : null}`}>
@@ -21,7 +21,7 @@ class FilterList extends Component {
             Categories
           </div>
           <div className='filterList'>
-            {this.renderFilterItem}
+            {/* {this.renderFilterItem} */}
             <span className='filterListItem'>
               Aaaaaaaaa
             </span>
