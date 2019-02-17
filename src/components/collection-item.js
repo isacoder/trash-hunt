@@ -5,10 +5,16 @@ import Item from './item';
 import '../assets/styles/item.css';
 
 class CollectionItem extends Component {
+  state = {
+    data: this.props.location.data
+  }
+
   render() {
     return (
       <div>
-        <Item />
+        <Item
+          data={this.state.data}
+        />
       </div>
     )
   }

@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 import '../assets/styles/filter-list.css';
 
 class FilterList extends Component {
-  renderFilterItem = () => {
-    return (
-      <div>
-        <span className='filterListItem'>
-          Aaaaaaaaa
-        </span>
-      </div>
-    )
-  }
+  // renderFilterItem = () => {
+  //   return (
+  //     <div>
+  //       <span className='filterListItem'>
+  //         Aaaaaaaaa
+  //       </span>
+  //     </div>
+  //   )
+  // }
 
   render() {
     return (
@@ -23,31 +23,35 @@ class FilterList extends Component {
           <div className='filterList'>
             {/* {this.renderFilterItem} */}
             <span className='filterListItem'>
-              Aaaaaaaaa
+              Instrument
             </span>
             <br />
             <span className='filterListItem'>
-              Aaaaaaaaa
+              Hardware
             </span>
             <br />
             <span className='filterListItem'>
-              Aaaaaaaaa
+              Food
             </span>
             <br />
             <span className='filterListItem'>
-              Aaaaaaaaa
+              Metal
             </span>
             <br />
             <span className='filterListItem'>
-              Aaaaaaaaa
+              Clothes
             </span>
             <br />
             <span className='filterListItem'>
-              Aaaaaaaaa
+              Magazines
             </span>
             <br />
             <span className='filterListItem'>
-              Aaaaaaaaa
+              Games
+            </span>
+            <br />
+            <span className='filterListItem'>
+              Movies
             </span>
             <br />
           </div>

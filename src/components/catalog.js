@@ -20,8 +20,6 @@ class Catalog extends Component {
     // Request for images tagged xmas       
     axios.get(`https://res.cloudinary.com/yukinoda/image/list/v${Date.now() + '/' + this.state.tag}.json`)
       .then(res => {
-        console.log(res, res.data)
-        // console.log(res.data.resources);
         this.setState({ gallery: res.data.resources });
       })
       .catch((err) => {
@@ -34,7 +32,7 @@ class Catalog extends Component {
   }
 
   redirectItem = data => {
-    console.log(data)
+    // console.log(data)
     this.props.history.push({
       pathname: this.state.pathName,
       data
