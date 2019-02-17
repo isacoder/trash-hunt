@@ -15,7 +15,7 @@ You can learn more about it in : https://cloudinary.com/documentation/google_aut
 
 ## Get started
 ```bash
-$ git clone https://github.com/yukinoda/junction-tokyo-2019
+$ git clone https://github.com/yukinoda/trash-hunt
 ```
 
 ## Local deploy
