@@ -38,9 +38,10 @@ class Upload extends Component {
       }
     },
       (error, result) => {
-        console.log(result);
         if (result && result.event === "success") {
-          this.widget.close()
+          alert('Upload Completed!');
+          this.widget.close();
+          window.location.reload();
         }
       }
     );
