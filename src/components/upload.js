@@ -39,8 +39,8 @@ class Upload extends Component {
     },
       (error, result) => {
         if (result && result.event === "success") {
-          alert('Upload Completed!');
           this.widget.close();
+          alert('Upload Completed!');
           window.location.reload();
         }
       }
