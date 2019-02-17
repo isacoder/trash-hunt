@@ -14,15 +14,21 @@
   font-size: 20px;
   width: 100%;
   text-align: center;
-  margin-top: 10px;
+  margin: 10px 0;
+  font-weight: 500;
 }
 
 .filterListContainer.openAnim {
-  animation: opening .5s ease-out forwards;
+  animation: opening .3s ease-out forwards;
 }
 
 .filterListContainer.closeAnim {
-  animation: closing .5s ease-in forwards;
+  animation: closing .3s ease-in forwards;
+}
+
+.filterList {
+  text-align: center;
+  line-height: 3em;
 }
 
 @keyframes opening {

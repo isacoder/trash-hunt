@@ -5,7 +5,7 @@ import FilterList from './filter-list';
 import '../assets/styles/filter.css';
 // images
 import filterButton from '../assets/images/filter-button.png';
-import closeButton from '../assets/images/close-button.png';
+// import closeButton from '../assets/images/close-button.png';
 
 
 class Filter extends Component {
@@ -37,7 +37,10 @@ class Filter extends Component {
         {this.state.listOpened ? 
           <div>
             <FilterList openList />
-            <img src={closeButton} alt='close' className='closeButton' onClick={this.closeButton} />
+            {/* <img src={closeButton} alt='close' className='closeButton' onClick={this.closeButton} /> */}
+            <div className='closeButton' onClick={this.closeButton}>
+              X
+            </div>
           </div>
           : 
           <div>
